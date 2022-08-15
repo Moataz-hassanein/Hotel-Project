@@ -1,0 +1,530 @@
+* {
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+}
+/* start of header */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+nav ul li:first-of-type {
+  background-color: rgb(212, 39, 39);
+}
+
+@media screen and (max-width: 600px) {
+  nav,
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li .logo {
+  color: white;
+}
+
+nav ul li:hover {
+  background-color: rgb(202, 199, 199);
+}
+
+nav ul li a i {
+  padding-right: 10px;
+}
+nav button {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+}
+
+nav button:hover {
+  background-color: rgb(202, 199, 199);
+}
+nav button a {
+  text-decoration: none;
+  color: black;
+}
+/* end of header */
+/* start of reservation  */
+
+.reservation {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 110vh;
+  position: relative;
+}
+
+.reservation .check {
+  background-color: white;
+  position: absolute;
+  width: 50%;
+  left: 15px;
+  top: 30%;
+}
+
+.reservation .check h2 {
+  background-color: rgb(212, 39, 39);
+  color: white;
+  font-weight: 100;
+  font-size: 35px;
+  padding: 15px;
+}
+.reservation .check h2 i {
+  font-size: 25px;
+  padding-right: 10px;
+}
+/* start of form */
+.check form {
+  padding: 15px;
+}
+.check form .f-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .reservation .check {
+    width: 90%;
+    top: 5px;
+  }
+
+  .check .f-row,
+  .s-row {
+    flex-direction: column;
+  }
+
+  .check form .r-float {
+    margin: 0;
+  }
+}
+.check form .l-float {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.check form input {
+  width: 100%;
+  padding: 8px;
+}
+
+.check form .r-float {
+  width: 100%;
+  margin: 10px 0 10px 10px;
+}
+.check form .s-row {
+  display: flex;
+  justify-content: space-between;
+}
+/* end of form */
+
+.check form button {
+  padding: 10px;
+  font-size: 17px;
+  background-color: gray;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.check form button:hover {
+  cursor: pointer;
+  background-color: rgb(189, 189, 189);
+  color: black;
+}
+
+.check form button i {
+  font-size: 17px;
+  padding-right: 10px;
+}
+
+/* end of reservation */
+
+/* start of info */
+
+main .info {
+  padding: 15px;
+}
+
+.info h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin: 15px 0;
+}
+
+.info p {
+  font-size: 18px;
+  font-weight: 100;
+  margin: 20px 0;
+}
+
+.info form {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  margin-bottom: 15px;
+}
+
+form div input {
+  padding: 8px;
+}
+
+form label {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+form label i {
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+form .search button {
+  padding: 8px 80px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+form .search button:hover {
+  cursor: pointer;
+  background-color: rgb(179, 179, 179);
+  color: black;
+}
+
+.info .rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+@media screen and (max-width: 600px) {
+  .info form {
+    display: block;
+  }
+  .info form input,
+  button {
+    width: 100%;
+  }
+  .info .rooms {
+    display: block;
+  }
+  .rooms article button {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.rooms article {
+  background-color: white;
+}
+
+.rooms article h3 {
+  font-size: 26px;
+  margin: 10px 0 0 10px;
+  font-weight: 1;
+}
+
+.rooms article img {
+  width: 100%;
+}
+
+.rooms article button {
+  width: 95%;
+  padding: 8px 0;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 100;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  display: block;
+}
+
+.rooms article button:hover {
+  background-color: rgb(184, 184, 184);
+  color: black;
+  cursor: pointer;
+}
+
+.rooms article span {
+  display: block;
+  margin: 10px 0 10px 10px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.rooms article i {
+  margin: 10px 0 10px 10px;
+  font-size: 17px;
+}
+
+/* end of info */
+
+/* start of about */
+
+.about {
+  display: flex;
+  padding: 15px;
+}
+.about .container {
+  width: 35%;
+}
+.about .container h2 {
+  font-size: 25px;
+  font-weight: 100;
+  padding: 20px 0;
+}
+
+.container p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+.about img {
+  padding-left: 20px;
+  width: 65%;
+}
+@media screen and (max-width: 600px) {
+  .about {
+    display: block;
+  }
+  .about .container {
+    width: 100%;
+  }
+  .about img {
+    width: 100%;
+  }
+}
+
+/* end of start */
+/* start of offer */
+
+.offer {
+  padding: 15px;
+}
+
+.offer div {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+
+.offer div i {
+  color: rgb(212, 39, 39);
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.offer p {
+  background-color: rgb(212, 39, 39);
+  padding: 40px 0;
+  color: white;
+}
+
+.offer p i {
+  font-size: 35px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .offer div {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+  }
+  .offer p {
+    text-align: center;
+  }
+}
+
+/* end of offer */
+/* start of branches */
+.branches {
+  padding: 15px;
+}
+
+.branches h2 {
+  padding: 15px 0;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.branches p {
+  font-weight: 100;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.branches .images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.branches .images .l-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+.branches .images img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.branches .images div {
+  position: relative;
+}
+
+.branches .images div span {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .branches .images,
+  .branches .images .l-column {
+    display: block;
+  }
+  .branches .images img {
+    width: 100%;
+  }
+}
+/* end of branches */
+/* start of subscribe */
+
+.subscribe {
+  padding: 30px 15px;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+}
+
+.subscribe:hover {
+  background-color: black;
+}
+
+.subscribe h2 {
+  font-size: 30px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+
+.subscribe span {
+  display: block;
+  padding-bottom: 15px;
+  font-weight: 100;
+  font-size: 17px;
+}
+
+.subscribe input {
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+}
+
+.subscribe button {
+  border: none;
+  outline: none;
+  background-color: rgb(212, 39, 39, 0.65);
+  color: white;
+  padding: 10px 12px;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.subscribe:hover button {
+  background-color: rgb(212, 39, 39);
+}
+
+.subscribe button:hover {
+  background-color: rgb(187, 187, 187);
+  color: black;
+  cursor: pointer;
+}
+
+/* end of subscribe */
+
+/* start of contact */
+
+.contact {
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.contact h2 {
+  font-size: 35px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+
+.contact p {
+  font-size: 17px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+
+.contact div {
+  font-size: 17px;
+  font-weight: 100;
+  padding: 3px 0;
+}
+
+.contact div i {
+  font-size: 15px;
+  color: rgb(212, 39, 39);
+  padding-right: 15px;
+}
+
+.contact input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.contact button {
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  padding: 12px 15px;
+  font-size: 17px;
+  font-weight: 100;
+  margin-top: 5px;
+}
+/* end of contact */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 35px;
+  line-height: 2;
+}

@@ -1,14 +1,223 @@
-<html>
-	<head>
-	
-		<title>My first repo</title>
-	</head>		
-	<body style="color: red">
-		<h1>My Sweet Project</h1>
-		<p>is is my sweet Project, I've just start learning Github.</p>
-		<p>edited comment</p>	
-		<hr>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start of header -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a class="logo" href="#home"><i class="fas fa-hotel"></i>Logo</a>
+          </li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button><a href="#contact">Book Now</a></button>
+      </nav>
+    </header>
+    <!-- end of header -->
+    <main>
+      <section class="reservation">
+        <div class="check">
+          <h2><i class="fas fa-bed"></i> Hotel</h2>
+          <form>
+            <div class="f-row">
+              <div class="l-float">
+                <label><i class="fas fa-calendar-week"></i>Check In</label>
+                <input type="text" placeholder="DD MM YY" />
+              </div>
+              <div class="r-float">
+                <label><i class="fas fa-calendar-week"></i>Check Out</label>
+                <input type="text" placeholder="DD MM YY" />
+              </div>
+            </div>
+            <div class="s-row">
+              <div class="l-float">
+                <label><i class="fas fa-male"></i>Adults</label>
+                <input type="number" value="1" />
+              </div>
+              <div class="r-float">
+                <label><i class="fas fa-child"></i>Kids</label>
+                <input type="number" value="0" />
+              </div>
+            </div>
 
+            <button><i class="fas fa-search"></i>Search Availability</button>
+          </form>
+        </div>
+      </section>
+      <section id="rooms" class="info">
+        <h2>Rooms</h2>
+        <p>
+          Make yourself at home is our slogan. We offer the best beds in the
+          industry. Sleep well and rest well
+        </p>
+        <form>
+          <div class="check-in">
+            <label><i class="fas fa-calendar-week"></i>Check In</label>
+            <input type="text" placeholder="DD MM YY" />
+          </div>
+          <div class="check-out">
+            <label><i class="fas fa-calendar-week"></i>Check Out</label>
+            <input type="text" placeholder="DD MM YY" />
+          </div>
+          <div class="adults">
+            <label><i class="fas fa-male"></i>Adults</label>
+            <input type="number" value="1" />
+          </div>
+          <div class="kids">
+            <label><i class="fas fa-child"></i>Kids</label>
+            <input type="number" value="0" />
+          </div>
+          <div class="search">
+            <label> <i class="fas fa-search"></i>Search</label>
+            <button>Search</button>
+          </div>
+        </form>
+        <div class="rooms">
+          <article class="single">
+            <img src="./images/single.jpg" alt="single" />
+            <h3>Single Room</h3>
+            <span>From $99</span>
+            <span>Single bed</span>
+            <span>15 m<sup>2</sup></span>
+            <i class="fas fa-bath"></i>
+            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-wifi"></i>
+            <button>Choose Room</button>
+          </article>
+          <article class="double">
+            <img src="./images/double.jpg" alt="double" />
+            <h3>Double Room</h3>
+            <span>From $149</span>
+            <span>Queen-size-bed</span>
+            <span>25 m<sup>2</sup></span>
+            <i class="fas fa-bath"></i>
+            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-desktop"></i>
+            <button>Choose Room</button>
+          </article>
+          <article class="deluxe">
+            <img src="./images/deluxe.jpg" alt="deluxe" />
+            <h3>Deluxe Room</h3>
+            <span>From $199</span>
+            <span>King-size bed</span>
+            <span>40 m<sup>2</sup></span>
+            <i class="fas fa-bath"></i>
+            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-glass-martini"></i>
+            <i class="fas fa-utensils"></i>
+            <button>Choose Room</button>
+          </article>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.
+          </p>
+          <span>We accpet:</span>
+          <i class="far fa-credit-card"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-amex"></i>
+        </div>
+        <img src="./images/address.jpg" alt="address" />
+      </section>
 
+      <article class="offer">
+        <div>
+          <i class="fas fa-map-marker-alt"></i>423 Some adr, Chicago, US
+        </div>
+        <div><i class="fas fa-phone-alt"></i> Phone: +00 151515</div>
+        <div><i class="fas fa-envelope"></i>Email: mail@mail.com</div>
+        <p>
+          <i class="fas fa-info-circle"></i>On demand, we can offer playstation,
+          babycall, children care, dog equipment, etc.
+        </p>
+      </article>
+      <section class="branches">
+        <h2>Our Hotels</h2>
+        <p>You can find our hotels anywhere in the world</p>
+        <div class="images">
+          <div class="r-column">
+            <div class="cairo">
+              <img src="./images/1.jpg" alt="1" />
+              <span>Cairo</span>
+            </div>
+          </div>
+          <div class="l-column">
+            <div class="rome">
+              <img src="./images/2.jpg" alt="2" />
+              <span>Rome</span>
+            </div>
+            <div class="paris">
+              <img src="./images/3.jpg" alt="3" />
+              <span>Paris</span>
+            </div>
+            <div class="newyork">
+              <img src="./images/4.jpg" alt="4" />
+              <span>New York</span>
+            </div>
+            <div class="london">
+              <img src="./images/5.jpg" alt="5" />
+              <span>London</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <article class="subscribe">
+        <h2>Get the best offers first</h2>
+        <span>Join our newsletter.</span>
+        <label>E-mail</label>
+        <input type="mail" placeholder="Your email address" />
+        <button>Subscribe</button>
+      </article>
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>if you have a questions. don't hesitate to ask them</p>
+        <div>
+          <i class="fas fa-map-marker-alt"></i>423 Some adr, Chicago, US
+        </div>
+        <div><i class="fas fa-phone-alt"></i> Phone: +00 151515</div>
+        <div><i class="fas fa-envelope"></i>Email: mail@mail.com</div>
+        <input type="text" placeholder="Name" />
+        <input type="mail" placeholder="Email" />
+        <input type="text" placeholder="Message" />
+        <button>Send Message</button>
+      </section>
+    </main>
+    <footer>
+      <h2>Find Us On</h2>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-snapchat"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </footer>
+  </body>
 </html>
